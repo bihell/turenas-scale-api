@@ -2,7 +2,7 @@ import configparser
 import os
 import sys
 
-from dataset import get_pool_datase
+from dataset import get_pool_dataset
 
 
 if __name__ == '__main__':
@@ -33,4 +33,4 @@ if __name__ == '__main__':
     auth = config.get('general', 'auth')
 
     if sys.argv[1] == 'get_pool_dataset':
-        get_pool_datase(host, auth)
+        get_pool_dataset(host, auth)
