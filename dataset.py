@@ -23,7 +23,7 @@ def format_capacity(value):
         return f"{value:.2f}M"
 
 
-def get_pool_datase(host, auth):
+def get_pool_dataset(host, auth):
     url = f'{host}/api/v2.0/pool/dataset'
     headers = {
         'Accept': 'application/json',
