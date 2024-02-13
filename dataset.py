@@ -6,13 +6,14 @@ def convert_capacity(capacity_str):
     unit = capacity_str[-1].upper()
     value = float(capacity_str[:-1])
 
+    if capacity_str == '0B':
+        return 0
     if unit == 'T':
         return value * 1024 * 1024
     elif unit == 'G':
         return value * 1024
     elif unit == 'M':
         return value
-
 
 def format_capacity(value):
     if value >= 1024 * 1024:
